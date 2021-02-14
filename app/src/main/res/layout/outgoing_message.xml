@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="message"
+            type="com.gehad.chat.onlineDataBase.model.Message" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp5"
+            android:orientation="vertical"
+            android:paddingVertical="@dimen/dp5"
+            android:paddingEnd="@dimen/dp24"
+            android:paddingStart="@dimen/dp12"
+            android:background="@drawable/outgoing_message_bg">
+
+            <TextView
+                android:id="@+id/massage_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{message.content}"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/sp16"
+                tools:text="message text message text" />
+
+            <TextView
+                android:id="@+id/data_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{message.date.toString()}"
+                tools:text="date text" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</layout>

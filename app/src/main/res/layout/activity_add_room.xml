@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="android.view.View"/>
+        <variable
+            name="vm"
+            type="com.gehad.chat.ui.addRoom.AddRoomViewModel" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/dp12"
+        tools:context=".ui.addRoom.AddRoomActivity">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/room_name"
+            android:text="@={vm.name}"/>
+
+        <TextView
+            android:id="@+id/room_name_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorRed"
+            android:text="@string/room_name_error"
+            android:visibility="@{vm.roomNameError?View.VISIBLE:View.GONE}"/>
+
+
+        <EditText
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/description"
+            android:lines="5"
+            android:maxLines="5"
+            android:text="@={vm.description}"/>
+
+        <TextView
+            android:id="@+id/room_description_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorRed"
+            android:text="@string/room_description_error"
+            android:visibility="@{vm.roomDescriptionError?View.VISIBLE:View.GONE}"/>
+
+        <Button
+            android:id="@+id/add_room_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp12"
+            android:background="@drawable/shape1_btn"
+            android:text="@string/add_room"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/sp18"
+            android:onClick="@{()->vm.addRoom()}"
+            />
+
+    </LinearLayout>
+</layout>

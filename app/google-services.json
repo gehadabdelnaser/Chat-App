@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "50930134718",
+    "firebase_url": "https://chat-cd698.firebaseio.com",
+    "project_id": "chat-cd698",
+    "storage_bucket": "chat-cd698.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:50930134718:android:2a1e334e42d384591238ef",
+        "android_client_info": {
+          "package_name": "com.gehad.chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "50930134718-phu425ij2mav19guiklcjqan7gdi738e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gehad.chat",
+            "certificate_hash": "eff44aeaa79b7f2dfb4d416d9ea380a56f1ccc6f"
+          }
+        },
+        {
+          "client_id": "50930134718-6c4ncqol13ogbq1m9eiroturuuolfj30.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCh6CtEhVIw8T-95GoaiXNcE1SXGTxkqC4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "50930134718-6c4ncqol13ogbq1m9eiroturuuolfj30.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
